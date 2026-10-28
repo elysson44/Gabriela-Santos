@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Gabriela Santos | Advocacia</title>
+    
+    <!-- Favicon utilizando a imagem -->
+    <link rel="icon" href="img/Advogada-Gabriela.png" type="image/png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        gold: {
+                            500: '#d4af37',
+                            600: '#b4941f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        
+
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-navy-900 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Topo / Barra de Navegação -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-navy-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo na Barra de Navegação com fundo removido e cor dourada aplicada -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 gold-logo transition-transform duration-300 group-hover:scale-105"></div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-navy-900 dark:text-white leading-tight">Dra. Gabriela Santos</span>
+                    <span class="text-[10px] uppercase tracking-widest text-gold-600 font-semibold">Advocacia</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#sobre" class="hover:text-gold-500 transition">Sobre</a>
+                <a href="#atuacao" class="hover:text-gold-500 transition">Áreas de Atuação</a>
+                <a href="#contato" class="hover:text-gold-500 transition">Contato</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <!-- Botão Dark Mode -->
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Alternar tema">
+                    <i id="theme-icon" class="fas fa-moon text-slate-700 dark:text-yellow-400"></i>
+                </button>
+                <!-- CTA Rápido -->
+                <a href="https://wa.me/5588996970781?text=Olá,%20Dra.%20Gabriela.%20Gostaria%20de%20mais%20informações%20sobre%20atendimento." target="_blank" class="hidden sm:inline-flex items-center bg-gold-500 hover:bg-gold-600 text-white font-medium px-4 py-2 rounded-lg transition shadow-md">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-navy-900 via-slate-900 to-slate-800 text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/30 px-3 py-1 rounded-full text-gold-400 text-xs tracking-wider uppercase">
+                    <i class="fas fa-balance-scale"></i> <span>Mestra em Direitos Humanos</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                    Defesa intransigente da <span class="text-gold-500">dignidade humana</span> e da justiça.
+                </h1>
+                <p class="text-slate-300 text-lg font-light leading-relaxed">
+                    Atropelos de garantias fundamentais exigem preparo técnico refinado, sensibilidade social e rigor acadêmico. Conte com uma advocacia pautada nos Direitos Humanos e constitucionais.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#contato" class="bg-gold-500 hover:bg-gold-600 text-white font-medium px-8 py-3.5 rounded-lg text-center transition shadow-lg">
+                        Agendar Atendimento
+                    </a>
+                    <a href="#atuacao" class="border border-slate-600 hover:border-gold-500 text-slate-200 hover:text-gold-400 font-medium px-8 py-3.5 rounded-lg text-center transition">
+                        Conhecer Atuação
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="w-full max-w-md bg-slate-800/60 border border-slate-700/80 p-8 rounded-2xl backdrop-blur-md shadow-2xl relative">
+                    <div class="absolute -top-4 -right-4 bg-gold-500 text-white p-3 rounded-full shadow-lg">
+                        <i class="fas fa-graduation-cap text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-4">Compromisso Ético</h3>
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                        "O Direito deve ser um instrumento efetivo de emancipação, reparação e salvaguarda dos direitos essenciais de cada cidadão."
+                    </p>
+                    <div class="border-t border-slate-700 pt-4 flex items-center justify-between text-xs text-slate-400">
+                        <span>OAB/CE</span>
+                        <span>Atendimento Especializado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Advogada -->
+    <section id="sobre" class="py-20 bg-white dark:bg-navy-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-navy-900 dark:text-white">
+                    Rigor acadêmico aliado à prática jurídica estratégica.
+                </h2>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    A <strong>Dra. Gabriela Santos</strong> é advogada e Mestra em Direitos Humanos, unindo sólida formação teórica à atuação firme perante os tribunais e órgãos de proteção de direitos. 
+                </p>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    Sua trajetória é marcada pelo compromisso com a justiça social, consultoria especializada, litigância estratégica e assessoria voltada à salvaguarda de garantias fundamentais e constitucionais.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="border-l-2 border-gold-500 pl-4">
+                        <h4 class="font-bold text-navy-900 dark:text-white text-lg">Mestrado</h4>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">Direitos Humanos</p>
+                    </div>
+                    <div class="border-l-2 border-gold-500 pl-4">
+                        <h4 class="font-bold text-navy-900 dark:text-white text-lg">Atuação</h4>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">Consultoria e Contencioso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-100 dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700">
+                <h3 class="text-xl font-serif font-bold text-navy-900 dark:text-white mb-6">Pilares da Atuação</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-gold-500 mt-1 mr-3"></i>
+                        <span class="text-slate-700 dark:text-slate-300 text-sm">Visão sistêmica e humanizada dos conflitos jurídicos.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-gold-500 mt-1 mr-3"></i>
+                        <span class="text-slate-700 dark:text-slate-300 text-sm">Uso de tratados internacionais e jurisprudência protetiva.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-gold-500 mt-1 mr-3"></i>
+                        <span class="text-slate-700 dark:text-slate-300 text-sm">Atendimento sigiloso, transparente e focado em soluções.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação -->
+    <section id="atuacao" class="py-20 bg-slate-100 dark:bg-slate-900/50 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-navy-900 dark:text-white mb-4">Áreas de Especialidade</h2>
+                <p class="text-slate-600 dark:text-slate-400">Soluções jurídicas estratégicas ancoradas na proteção dos Direitos Humanos e Constitucionais.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white dark:bg-navy-900 p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:border-gold-500 transition group">
+                    <div class="w-12 h-12 bg-gold-500/10 text-gold-500 rounded-lg flex items-center justify-center text-xl mb-6 group-hover:bg-gold-500 group-hover:text-white transition">
+                        <i class="fas fa-balance-scale-right"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif mb-3 text-navy-900 dark:text-white">Litigância Estratégica</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Atuação em casos de grande impacto social, visando a defesa de direitos fundamentais perante os tribunais.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white dark:bg-navy-900 p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:border-gold-500 transition group">
+                    <div class="w-12 h-12 bg-gold-500/10 text-gold-500 rounded-lg flex items-center justify-center text-xl mb-6 group-hover:bg-gold-500 group-hover:text-white transition">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif mb-3 text-navy-900 dark:text-white">Proteção contra Violações</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Assistência jurídica e medidas cabíveis contra abusos de autoridade, discriminação e violações de garantias individuais.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white dark:bg-navy-900 p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:border-gold-500 transition group">
+                    <div class="w-12 h-12 bg-gold-500/10 text-gold-500 rounded-lg flex items-center justify-center text-xl mb-6 group-hover:bg-gold-500 group-hover:text-white transition">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif mb-3 text-navy-900 dark:text-white">Consultoria & Assessoria</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Orientação jurídica preventiva para organizações, coletivos e pessoas físicas que buscam assegurar seus direitos sociais.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Triagem / Contato Interativo via WhatsApp -->
+    <section id="contato" class="py-20 bg-white dark:bg-navy-900 transition-colors">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-navy-900 dark:text-white mb-4">Inicie o seu atendimento</h2>
+                <p class="text-slate-600 dark:text-slate-400">Preencha o formulário abaixo. Ao clicar no botão, os dados fornecidos serão enviados diretamente para o WhatsApp da Dra. Gabriela Santos.</p>
+            </div>
+
+            <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xl">
+                <form id="whatsapp-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Seu Nome *</label>
+                            <input type="text" id="client-name" required class="w-full bg-white dark:bg-navy-900 border border-slate-300 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-800 dark:text-slate-100 focus:outline-none focus:border-gold-500" placeholder="Ex: Maria Silva">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Área de Interesse *</label>
+                            <select id="client-area" class="w-full bg-white dark:bg-navy-900 border border-slate-300 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-800 dark:text-slate-100 focus:outline-none focus:border-gold-500">
+                                <option value="Litigância Estratégica">Litigância Estratégica</option>
+                                <option value="Proteção contra Violações de Direitos">Proteção contra Violações de Direitos</option>
+                                <option value="Consultoria em Direitos Humanos">Consultoria em Direitos Humanos</option>
+                                <option value="Assessoria a Organizações / Coletivos">Assessoria a Organizações / Coletivos</option>
+                                <option value="Outros Assuntos">Outros Assuntos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Resumo da Demanda / Mensagem *</label>
+                        <textarea id="client-message" rows="4" required class="w-full bg-white dark:bg-navy-900 border border-slate-300 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-800 dark:text-slate-100 focus:outline-none focus:border-gold-500" placeholder="Descreva sucintamente o seu caso ou dúvida..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 rounded-lg transition shadow-md flex items-center justify-center space-x-2 text-lg">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span>Enviar Mensagem</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-navy-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 gold-logo"></div>
+                <div>
+                    <span class="font-serif text-lg font-bold text-white">Dra. Gabriela Santos</span>
+                    <p class="text-xs text-slate-500 mt-0.5">Advocacia e Direitos Humanos • Contato: (88) 99697-0781</p>
+                </div>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#sobre" class="hover:text-gold-500 transition">Sobre</a>
+                <a href="#atuacao" class="hover:text-gold-500 transition">Atuação</a>
+                <a href="#contato" class="hover:text-gold-500 transition">Contato</a>
+            </div>
+            <div class="text-xs text-slate-600">
+                © 2026 Dra. Gabriela Santos. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Funcionalidades -->
+    <script>
+        // Dark Mode Toggle
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const htmlElement = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        });
+
+        // Script de envio do formulário direto para o WhatsApp
+        document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('client-name').value.trim();
+            const area = document.getElementById('client-area').value;
+            const message = document.getElementById('client-message').value.trim();
+
+            const phone = "5588996970781";
+            
+            // Texto formatado para o WhatsApp
+            const text = `Olá, Dra. Gabriela Santos!\n\n` +
+                         `*Novo contato pelo site:*\n` +
+                         `👤 *Nome:* ${name}\n` +
+                         `📌 *Área de Interesse:* ${area}\n` +
+                         `📝 *Mensagem:* ${message}`;
+
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/${phone}?text=${encodedText}`;
+
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
